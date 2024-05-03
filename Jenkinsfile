@@ -39,9 +39,11 @@ pipeline{
             steps{
                 echo "Deploy the code to the production environment ${env.PRODUCTION_ENVIRONMENT}"
             }
-        stage ('Close'){
+        stage ('Notify'){
             steps{
-                echo "Closing the program"
+                echo "Send an email notification to the team"
+            }
         }
     }
+}
 }

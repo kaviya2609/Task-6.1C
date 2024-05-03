@@ -39,6 +39,9 @@ pipeline{
             steps{
                 echo "Deploy the code to the production environment ${env.PRODUCTION_ENVIRONMENT}"
             }
+        stage ('Close'){
+            steps{
+                echo "Closing the program"
         }
     }
 }

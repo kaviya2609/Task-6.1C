@@ -44,7 +44,7 @@ pipeline
                         emailext (
                             to: "kaviyarammanaiken098@gmail.com",
                             subject: "Security Scan Status Email",
-                            body: "Security Scan was successful!"
+                            body: "Security Scan was successful!",
                             attachLog: true
                         )
                     }
